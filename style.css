@@ -1,3 +1,4 @@
+/* RESET & GLOBAL */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,10 @@ body {
     line-height: 1.6;
 }
 
-/* HERO */
+/* =========================
+   HERO / LANDING PAGE
+   ========================= */
+
 .hero {
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     padding: 80px 20px;
@@ -56,7 +60,10 @@ body {
     background: #ffc933;
 }
 
-/* ABOUT BOOK */
+/* =========================
+   ABOUT BOOK SECTION
+   ========================= */
+
 .about-book {
     padding: 60px 20px;
     max-width: 800px;
@@ -69,7 +76,10 @@ body {
     margin-bottom: 20px;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+   ========================= */
+
 .footer {
     background: #0f2027;
     color: #ddd;
@@ -97,7 +107,10 @@ body {
     opacity: 0.8;
 }
 
-/* CONTACT PAGE */
+/* =========================
+   CONTACT PAGE
+   ========================= */
+
 .contact-container {
     max-width: 500px;
     margin: 80px auto;
@@ -135,4 +148,112 @@ body {
 
 .contact-container button:hover {
     background: #2c5364;
+}
+
+/* =========================
+   ORDER PAGE (MATCH LANDING)
+   ========================= */
+
+.container {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.order-card {
+    max-width: 720px;
+    margin: auto;
+    background: white;
+    padding: 45px;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+}
+
+.order-card h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #0f2027;
+}
+
+/* FORM GRID */
+.order-card form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.order-card label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+}
+
+/* INPUTS */
+.order-card input,
+.order-card textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+}
+
+.order-card textarea {
+    resize: none;
+    height: 90px;
+}
+
+/* FULL WIDTH ELEMENTS */
+.full-width {
+    grid-column: span 2;
+}
+
+/* PRICE BREAKDOWN */
+.price-breakdown {
+    background: #f8f9fb;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+}
+
+.price-breakdown .total {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* PAYMENT BUTTON */
+.pay-btn {
+    background: #ffb703;
+    color: #000;
+    padding: 14px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.pay-btn:hover {
+    background: #ffc933;
+}
+
+/* =========================
+   MOBILE OPTIMIZATION
+   ========================= */
+
+@media (max-width: 720px) {
+    .order-card {
+        padding: 30px 25px;
+    }
+
+    .order-card form {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: span 1;
+    }
 }
