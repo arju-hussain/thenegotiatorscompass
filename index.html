@@ -25,56 +25,9 @@
         Practical, reflective, and grounded in real situations.
       </p>
 
-      <button class="buy-btn" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">
-        Order Paperback
-      </button>
+      <a href="order.html" class="buy-btn">Order Paperback</a>
     </div>
   </main>
 
-  <section id="order" class="order-section">
-    <h2>Place Your Order</h2>
-
-    <form id="orderForm">
-      <label>
-        Full Name
-        <input type="text" required>
-      </label>
-
-      <label>
-        Phone Number
-        <input type="tel" required>
-      </label>
-
-      <label>
-        Complete Address
-        <textarea required></textarea>
-      </label>
-
-      <label>
-        State
-        <input type="text" required>
-      </label>
-
-      <label>
-        PIN Code
-        <input type="number" required>
-      </label>
-
-      <label>
-        Quantity
-        <input type="number" id="quantity" value="1" min="1" required>
-      </label>
-
-      <p class="price">
-        Total Amount: ₹<span id="total">389</span>
-      </p>
-
-      <button type="submit" class="pay-btn">
-        Proceed to Payment
-      </button>
-    </form>
-  </section>
-
-  <script src="script.js"></script>
 </body>
 </html>
