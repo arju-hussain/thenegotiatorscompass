@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order – The Negotiator’s Compass</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="order-section">
+    <h2>Place Your Order</h2>
+
+    <form id="orderForm"
+          action="https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse"
+          method="POST"
+          target="hidden_iframe">
+
+      <label>
+        Full Name
+        <input type="text" name="entry.1111111111" required>
+      </label>
+
+      <label>
+        Phone Number
+        <input type="tel" name="entry.2222222222" required>
+      </label>
+
+      <label>
+        Complete Address
+        <textarea name="entry.3333333333" required></textarea>
+      </label>
+
+      <label>
+        State
+        <input type="text" name="entry.4444444444" required>
+      </label>
+
+      <label>
+        PIN Code
+        <input type="number" name="entry.5555555555" required>
+      </label>
+
+      <label>
+        Quantity
+        <input type="number" id="quantity" name="entry.6666666666" value="1" min="1" required>
+      </label>
+
+      <!-- Hidden total field for Google Sheets -->
+      <input type="hidden" id="totalInput" name="entry.7777777777">
+
+      <div class="price-breakdown">
+        <p>Book Price: ₹349 × <span id="qtyDisplay">1</span></p>
+        <p>Shipping: ₹40 × <span id="qtyShipping">1</span></p>
+        <p class="price total">
+          Total Payable: ₹<span id="total">389</span>
+        </p>
+      </div>
+
+      <button type="submit" class="pay-btn">
+        Proceed to Payment
+      </button>
+    </form>
+
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
