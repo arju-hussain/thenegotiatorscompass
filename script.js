@@ -13,16 +13,14 @@ function updateTotal() {
 quantityInput.addEventListener("input", updateTotal);
 updateTotal();
 
-document.getElementById("orderForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  const amount = Number(totalSpan.textContent) * 100;
-
-  alert(
-    "Razorpay will be connected here.\n\n" +
-    "Amount to be charged: ₹" + (amount / 100)
-  );
-
-  // Razorpay Checkout code will be added AFTER
-  // your Razorpay account is active and site URL is verified
-});
+// TEMPORARILY DISABLED FOR GOOGLE FORM TEST
+// document.getElementById("orderForm").addEventListener("submit", function(e) {
+//   e.preventDefault();
+//
+//   const amount = Number(totalSpan.textContent) * 100;
+//
+//   alert(
+//     "Razorpay will be connected here.\n\n" +
+//     "Amount to be charged: ₹" + (amount / 100)
+//   );
+// });
