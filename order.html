@@ -8,63 +8,68 @@
 </head>
 <body>
 
-  <section class="order-section">
-    <h2>Place Your Order</h2>
+  <main class="container">
+    <section class="order-card">
 
-    <form
-      id="orderForm"
-      action="https://docs.google.com/forms/d/e/1FAIpQLSfLqS80gBvVh6lJhWMKGgTYwqfCICI4GACdXpYaRaqiqfNb-g/formResponse"
-      method="POST"
-      target="hidden_iframe">
+      <h1>Place Your Order</h1>
 
-      <label>
-        Full Name
-        <input type="text" name="entry.92284143" required>
-      </label>
+      <form
+        id="orderForm"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSfLqS80gBvVh6lJhWMKGgTYwqfCICI4GACdXpYaRaqiqfNb-g/formResponse"
+        method="POST"
+        target="hidden_iframe">
 
-      <label>
-        Phone Number
-        <input type="tel" name="entry.1892567592" required>
-      </label>
+        <label>
+          Full Name
+          <input type="text" name="entry.92284143" required>
+        </label>
 
-      <label>
-        Complete Address
-        <textarea name="entry.2122240856" required></textarea>
-      </label>
+        <label>
+          Phone Number
+          <input type="tel" name="entry.1892567592" required>
+        </label>
 
-      <label>
-        State
-        <input type="text" name="entry.1947958366" required>
-      </label>
+        <label class="full-width">
+          Complete Address
+          <textarea name="entry.2122240856" required></textarea>
+        </label>
 
-      <label>
-        PIN Code
-        <input type="number" name="entry.350280270" required>
-      </label>
+        <label>
+          State
+          <input type="text" name="entry.1947958366" required>
+        </label>
 
-      <label>
-        Quantity
-        <input type="number" id="quantity" name="entry.1382661257" value="1" min="1" required>
-      </label>
+        <label>
+          PIN Code
+          <input type="number" name="entry.350280270" required>
+        </label>
 
-      <!-- Hidden total field for Google Sheets -->
-      <input type="hidden" id="totalInput" name="entry.119779853">
+        <label>
+          Quantity
+          <input type="number" id="quantity" name="entry.1382661257" value="1" min="1" required>
+        </label>
 
-      <div class="price-breakdown">
-        <p>Book Price: ₹349 × <span id="qtyDisplay">1</span></p>
-        <p>Shipping: ₹40 × <span id="qtyShipping">1</span></p>
-        <p class="price total">
-          Total Payable: ₹<span id="total">389</span>
-        </p>
-      </div>
+        <!-- Hidden total field for Google Sheets -->
+        <input type="hidden" id="totalInput" name="entry.119779853">
 
-      <button type="submit" class="pay-btn">
-        Proceed to Payment
-      </button>
-    </form>
+        <div class="price-breakdown full-width">
+          <p>Book Price: ₹349 × <span id="qtyDisplay">1</span></p>
+          <p>Shipping: ₹40 × <span id="qtyShipping">1</span></p>
+          <p class="price total">
+            Total Payable: ₹<span id="total">389</span>
+          </p>
+        </div>
 
-    <iframe name="hidden_iframe" style="display:none;"></iframe>
-  </section>
+        <button type="submit" class="pay-btn full-width">
+          Proceed to Payment
+        </button>
+
+      </form>
+
+      <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+    </section>
+  </main>
 
   <script src="script.js"></script>
 
