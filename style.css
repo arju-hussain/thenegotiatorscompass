@@ -257,3 +257,25 @@ body {
         grid-column: span 1;
     }
 }
+
+
+
+/* =========================
+   THANK YOU PAGE
+   ========================= */
+
+.thank-you-card {
+    text-align: center;
+}
+
+.thank-you-text {
+    font-size: 1rem;
+    color: #374151;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.thank-you-action {
+    text-align: center;
+}
+
