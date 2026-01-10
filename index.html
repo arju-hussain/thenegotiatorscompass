@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Negotiator’s Compass</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <div class="book-section">
+      <img src="cover.jpg" alt="The Negotiator’s Compass book cover">
+    </div>
+
+    <div class="content-section">
+      <h1>The Negotiator’s Compass</h1>
+      <p class="subtitle">
+        Navigate conversations, decisions, and deals with clarity and confidence.
+      </p>
+
+      <p class="description">
+        This book is not about winning arguments. It is about understanding what is really
+        happening when people want different things and still have to move forward together.
+        Practical, reflective, and grounded in real situations.
+      </p>
+
+      <button class="buy-btn" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">
+        Order Paperback
+      </button>
+    </div>
+  </main>
+
+  <section id="order" class="order-section">
+    <h2>Place Your Order</h2>
+
+    <form id="orderForm">
+      <label>
+        Full Name
+        <input type="text" required>
+      </label>
+
+      <label>
+        Phone Number
+        <input type="tel" required>
+      </label>
+
+      <label>
+        Complete Address
+        <textarea required></textarea>
+      </label>
+
+      <label>
+        State
+        <input type="text" required>
+      </label>
+
+      <label>
+        PIN Code
+        <input type="number" required>
+      </label>
+
+      <label>
+        Quantity
+        <input type="number" id="quantity" value="1" min="1" required>
+      </label>
+
+      <p class="price">
+        Total Amount: ₹<span id="total">389</span>
+      </p>
+
+      <button type="submit" class="pay-btn">
+        Proceed to Payment
+      </button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
