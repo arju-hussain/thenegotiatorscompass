@@ -29,11 +29,19 @@ body {
 }
 
 .book-cover {
-    width: 220px;
-    margin-bottom: 25px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
-    border-radius: 6px;
+    width: 340px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 
+        0 20px 50px rgba(0, 0, 0, 0.35),
+        0 0 0 1px rgba(255,255,255,0.08);
+    transition: transform 0.3s ease;
 }
+
+.book-cover:hover {
+    transform: translateY(-4px);
+}
+
 
 .hero h1 {
     font-size: 2.5rem;
@@ -244,7 +252,7 @@ body {
    MOBILE OPTIMIZATION
    ========================= */
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
     .order-card {
         padding: 30px 25px;
     }
@@ -256,7 +264,12 @@ body {
     .full-width {
         grid-column: span 1;
     }
+
+    .book-cover {
+        width: 260px;
+    }
 }
+
 
 
 
