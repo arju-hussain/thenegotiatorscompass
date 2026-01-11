@@ -33,21 +33,22 @@ body {
    ========================= */
 
 .book-frame {
-    display: inline-block;
-    padding: 30px 36px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 20px;
 }
 
 /* MAIN BOOK IMAGE */
 .book-cover {
-    width: 340px;
-    max-width: 85%;
-    margin-bottom: 30px;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
     border-radius: 12px;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
-    position: relative;
-    top: -12px;
+    transition: transform 0.3s ease;
 }
 
 .book-cover:hover {
@@ -267,13 +268,11 @@ body {
 @media (max-width: 768px) {
 
     .book-frame {
-        padding: 22px 24px;
+        padding: 20px;
     }
 
     .book-cover {
-        width: 300px;
-        max-width: 90%;
-        top: -6px;
+        max-width: 280px;
     }
 
     .hero h1 {
@@ -284,6 +283,7 @@ body {
         font-size: 1rem;
     }
 }
+
 
 
 
