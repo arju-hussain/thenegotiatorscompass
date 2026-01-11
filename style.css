@@ -28,14 +28,26 @@ body {
     margin: auto;
 }
 
+/* =========================
+   HERO BOOK VISUAL EMPHASIS
+   ========================= */
+
+.book-frame {
+    display: inline-block;
+    padding: 30px 36px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+}
+
+/* MAIN BOOK IMAGE */
 .book-cover {
     width: 340px;
+    max-width: 85%;
     margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 
-        0 20px 50px rgba(0, 0, 0, 0.35),
-        0 0 0 1px rgba(255,255,255,0.08);
-    transition: transform 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+    position: relative;
+    top: -12px;
 }
 
 .book-cover:hover {
@@ -253,20 +265,23 @@ body {
    ========================= */
 
 @media (max-width: 768px) {
-    .order-card {
-        padding: 30px 25px;
-    }
 
-    .order-card form {
-        grid-template-columns: 1fr;
-    }
-
-    .full-width {
-        grid-column: span 1;
+    .book-frame {
+        padding: 22px 24px;
     }
 
     .book-cover {
-        width: 260px;
+        width: 300px;
+        max-width: 90%;
+        top: -6px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
     }
 }
 
