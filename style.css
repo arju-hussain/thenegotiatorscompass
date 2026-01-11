@@ -24,7 +24,7 @@ body {
 }
 
 .hero-content {
-    max-width: 700px;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -284,7 +284,19 @@ body {
     }
 }
 
+/* =========================
+   FOR LARGE SCREEN OPTIMIZATION
+   ========================= */
 
+@media (min-width: 1024px) {
+    .book-cover {
+        max-width: 460px;
+    }
+
+    .book-frame {
+        padding: 40px;
+    }
+}
 
 
 
