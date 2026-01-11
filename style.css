@@ -24,7 +24,7 @@ body {
 }
 
 .hero-content {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -294,7 +294,7 @@ body {
     }
 
     .book-frame {
-        padding: 40px;
+        padding: 30px;
     }
 }
 
